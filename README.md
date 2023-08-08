@@ -3,9 +3,9 @@
 Question the wisdom is a langchain based app to help people towards their spiritual Journey.This app helps people to attain knowledge from books like Bible, Quran, Gita, The Tanakh, the Analects of Confucius etc.
 
 ## Whats the purpose of this App?
-- The concepts of gita are hard to understand and we need a easier way to understand.
+- The concepts of religious master piece are hard to understand and we need a easier way to understand.
 - we dont have time/patience to read these book, yet need these in life.
-- Attain wisdom by chatting with a Speaking Book Bot.
+- Attain wisdom by chatting with a Speaking knowledge Bot.
 - we have situations in life for which these book have answers to. 
 
 ## Features
@@ -13,6 +13,13 @@ Question the wisdom is a langchain based app to help people towards their spirit
 
 
 ## Installation 
+
+## Run the App (Streamlit UI)
+- cd to the question_the_wisdom folder
+- Run the following commands
+    - ``` pip install -r requirements.txt ```
+    - ``` streamlit run app/frontend.py ```
+
 ### Run it in Python Notebook
 - QTW requires python to be installed
 - QTW requires JupyerLab or similar environments to run.
@@ -21,15 +28,8 @@ Question the wisdom is a langchain based app to help people towards their spirit
     - `jupyter-lab`
 - run the python notebook **question_the_wisdom.ipynb**
 - Get the OpenAI API key and store it in environment variable
-### Installation of Streamlit
 
 
-
-## Run the App (Streamlit UI)
-- cd to the question_the_wisdom folder
-- Run the following commands
-    - ``` pip install -r requirements.txt ```
-    - ``` streamlit run app/frontend.py ```
 
 ## Note
 
