@@ -1,0 +1,6 @@
+langchain
+pypdf
+chromadb
+torch
+torchvision
+sentence_transformers

@@ -1,0 +1,5 @@
+- Wisdom to be added from books in the following link
+    - bit.ly/wisdom-books
+- Develop Test cases and suitable documentation
+- FineTune HuggingFace Llama Model with more books(preferably Alpaca model)
+- use huggingface model instead of OpenAI model
