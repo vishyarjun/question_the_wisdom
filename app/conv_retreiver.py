@@ -28,8 +28,8 @@ class Gita:
     
     
         #self.llm = OpenAI(temperature=0)
-        self.llm = HuggingFacePipeline.from_model_id(model_id="gpt2",
-        task="text-generation",model_kwargs={"temperature": 1, "max_length": 64})
+        self.llm = HuggingFacePipeline.from_model_id(model_id="bigscience/bloom-1b7",
+        task="text-generation")
 
         self.qa = ConversationalRetrievalChain.from_llm(
             self.llm,retriever=self.retriever,
