@@ -7,4 +7,4 @@ sentence_transformers
 transformers
 huggingface_hub
 openai
-pysqlite3-binary
+pysqlite3
