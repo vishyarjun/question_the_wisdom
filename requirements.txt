@@ -4,3 +4,5 @@ chromadb
 torch
 torchvision
 sentence_transformers
+transformers
+huggingface_hub

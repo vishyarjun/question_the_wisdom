@@ -1,4 +1,5 @@
 from langchain.llms import OpenAI
+from langchain.llms import HuggingFaceHub
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 from langchain.vectorstores import Chroma
@@ -8,6 +9,9 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.prompts import PromptTemplate
 # Run chain
 from langchain.chains import RetrievalQA
+from langchain import HuggingFacePipeline
+
+
 class Gita:
     def __init__(self):
         self.vectordb = Chroma(
@@ -20,7 +24,10 @@ class Gita:
             )
     
     
-        self.llm = OpenAI(temperature=0)
+        #self.llm = OpenAI(temperature=0)
+        self.llm = HuggingFacePipeline.from_model_id(model_id="bigscience/bloom-1b7", 
+        task="text-generation",model_kwargs={"temperature": 0, "max_length": 64})
+
         self.qa = ConversationalRetrievalChain.from_llm(
             self.llm,retriever=self.retriever,
             memory=self.memory
