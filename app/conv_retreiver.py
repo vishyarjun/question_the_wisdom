@@ -11,6 +11,9 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from langchain import HuggingFacePipeline
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 class Gita:
     def __init__(self):
